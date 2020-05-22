@@ -14,6 +14,7 @@
         	<a-asset-item id="mirror" src="models/Mirror.gltf"></a-asset-item>
         	<img id="vloer" src="images/vloer.jpg" />
         	<img id="muur" src="images/muur.jpg" />
+        	<img id="muurSchilderijen" src="images/muurSchilderijen.jpg" />
   			<img id="broek" src="images/broek.jpg" />
 
       	</a-assets>
@@ -40,7 +41,7 @@
             >
       	</a-entity>
 
-        <a-image src="#broek"></a-image>
+        <a-image src="#broek" position="3 3 -2"></a-image>
 
       <!-- tekst -->
     	<a-entity position="0 2.5 1"
@@ -55,7 +56,7 @@
 
       <a-box material="src: #muur; repeat: 2 2" depth="0.5" height="7" width="10" position="0 0 -5"></a-box>
       <a-box material="src: #muur; repeat: 2 2" depth="0.2" height="7" width="8" position="5 0 -5" rotation="0 100 -2"></a-box>
-      <a-box material="src: #muurSchilderij; repeat: 2 2" depth="0.2" height="7" width="8" position="-5 0 -5" rotation="0 -100 -2"></a-box>
+      <a-box material="src: #muurSchilderijen; repeat: 2 2" depth="0.2" height="7" width="8" position="-5 0 -5" rotation="0 -100 -2"></a-box>
       
       <a-plane material="src: #vloer; repeat: 30 30" position="0 0 -4" rotation="-90 0 0" width="100"  height="100" color="white" shadow></a-plane> 
       <a-sky color="#e8e8e8"></a-sky>
