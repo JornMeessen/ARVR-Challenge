@@ -37,7 +37,13 @@
           	position="0 0 -1"
           	radius-inner= "0.02"
           	radius-outer= "0.03"
-          	material="color: orange; shader: flat">
+          	material="color: orange; shader: flat"
+
+          	animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
+  			animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1"
+  			animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1"
+  			cursor="fuse: true;"
+         >
         </a-ring>
       </a-camera>
 
@@ -77,10 +83,10 @@
             >
       	</a-entity>
 
-      	<a-image id="item" src="#trui" position="1.5 2.5 -5" shadow></a-image>
-      	<a-image class="item" src="#shirt" position="3 2.5 -5" shadow></a-image>
-        <a-image class="item" src="#broek" position="1.5 1.2 -5" shadow></a-image>
-        <a-image class="item" src="#schoen" position="3 1.2 -5" shadow></a-image>
+      	<a-image src="#trui" position="1.5 2.5 -5" shadow></a-image>
+      	<a-image src="#shirt" position="3 2.5 -5" shadow></a-image>
+        <a-image src="#broek" position="1.5 1.2 -5" shadow></a-image>
+        <a-image src="#schoen" position="3 1.2 -5" shadow></a-image>
 
       <!-- tekst -->
 
