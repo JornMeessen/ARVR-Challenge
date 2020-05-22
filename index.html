@@ -13,10 +13,10 @@
         	<a-asset-item id="people" src="models/People.gltf"></a-asset-item>
         	<a-asset-item id="mirror" src="models/Mirror.gltf"></a-asset-item>
         	<img id="vloer" src="images/vloerpatroon2.jpg" />
-        	<img id="muur" src="images/lichtgroengrijs.jpg" />
-        	<img id="muur" src="images/schilderij 1.jpg" />
-        	<img id="muur" src="images/schilderij 2.jpg" />
-        	<img id="muur" src="images/schilderij 3.jpg" />
+        	<img id="muur" src="images/muur.jpg" />
+        	<img id="schilderij1" src="images/schilderij 1.jpg" />
+        	<img id="schilderij2" src="images/schilderij 2.jpg" />
+        	<img id="schilderij3" src="images/schilderij 3.jpg" />
       	</a-assets>
 
       	<a-entity 
@@ -32,6 +32,12 @@
       	</a-entity>
       	<a-cylinder color="white" depth="1" height="0.5" width="1" position="0 0 -2"></a-cylinder>
 
+
+    	<a-entity 
+      		material="src: #schilderij1;"
+      		position="0 0 -5"
+            >
+      	</a-entity>
 
       	<a-entity 
       		gltf-model="#mirror" 
