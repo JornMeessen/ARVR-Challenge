@@ -15,9 +15,41 @@
 
       <a-entity gltf-model="#people" position="0 0 -4"></a-entity>
 
+
+      <!-- tekst -->
+      	<!-- Anchors. -->
+     <!--  <a-entity mixin="marker" position="-2.5 1 -4"></a-entity> -->
+      <a-entity position="-2.5 1 -2"
+                text="anchor: left; width: 1.5; color: white; value: [LEFT ANCHOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+      <!-- <a-ntity mixin="marker" position="0 1 -4"></a-entity> -->
+      <a-entity position="0 1 -2"
+                text="anchor: center; width: 1.5; color: white; value: [CENTER ANCHOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+      <!-- <a-entity mixin="marker" position="2.5 1 -4"></a-entity> -->
+      <a-entity position="2.5 1 -2"
+                text="anchor: right; width: 1.5; color: white; value: [RIGHT ANCHOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+
+      	<!-- Spacing. -->
+     <!--  <a-entity mixin="marker" position="-1 2.5 -4"></a-entity> -->
+      <a-entity position="-1 2.5 -2"
+                text="width: 2; color: white; value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+
+      <!-- <a-entity mixin="marker" position="-1 2 -4"></a-entity> -->
+      <a-entity position="-1 2 -2"
+                text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: [LINE AND LETTER SPACING] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+      </a-entity>
+
+
       
       <a-plane position="0 0 -4" rotation="-90 0 0" width="100"  height="100" color="#7BC8A4" shadow></a-plane> 
       <a-sky color="#6EBAA7"></a-sky>
+
+    <a-entity position="0 0 0">
+    	<a-entity camera look-controls wasd-controls></a-entity>
+    </a-entity>
     </a-scene>
   </body>
 </html>
