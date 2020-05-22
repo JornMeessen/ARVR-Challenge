@@ -11,6 +11,7 @@
     <a-scene>
      	<a-assets>
         	<a-asset-item id="people" src="models/People.gltf"></a-asset-item>
+        	<a-asset-item id="mirror" src="models/Mirror.gltf"></a-asset-item>
       	</a-assets>
 
       	<a-entity 
@@ -22,6 +23,13 @@
                    dur: 2000; 
                    easing: linear; 
                    loop: true" 
+            >
+      	</a-entity>
+
+      	<a-entity 
+      		gltf-model="#mirror" 
+      		position="4 0 0"
+      		rotation="0 0 0"
             >
       	</a-entity>
 
