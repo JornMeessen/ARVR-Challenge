@@ -32,14 +32,13 @@
       	</a-entity>
       	<a-cylinder color="white" depth="1" height="0.5" width="1" position="-2 0 -3"></a-cylinder>
 
-
-    	<a-entity 
-      		material="src: #schilderij1;"
+<!-- material="src: #schilderij1;" -->
+    	<a-box 
       		position="0 0 -4"
-      		rotation="0 90 0"
-      		height="0.2" width="0.5"
+      		height="0.5" width="1"
+      		color="green"
             >
-      	</a-entity>
+      	</a-box>
 
       	<a-entity 
       		gltf-model="#mirror" 
@@ -63,7 +62,7 @@
       <a-box material="src: #muur; repeat: 2 2" depth="0.2" height="7" width="8" position="5 0 -5" rotation="0 100 0"></a-box>
       <a-box material="src: #muur; repeat: 2 2" depth="0.2" height="7" width="8" position="-5 0 -5" rotation="0 -100 0"></a-box>
       
-      <a-plane material="src: #vloer; repeat: 15 15" position="0 0 -4" rotation="-90 0 0" width="100"  height="100" color="white" shadow></a-plane> 
+      <a-plane material="src: #vloer; repeat: 30 30" position="0 0 -4" rotation="-90 0 0" width="100"  height="100" color="white" shadow></a-plane> 
       <a-sky color="#e8e8e8"></a-sky>
 
     <a-entity position="0 1 3.5">
