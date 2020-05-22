@@ -9,35 +9,28 @@
   </head>
   <body>
     <a-scene>
-      <a-assets>
-        <a-asset-item id="people" src="models/People.gltf"></a-asset-item>
-      </a-assets>
+     	<a-assets>
+        	<a-asset-item id="people" src="models/People.gltf"></a-asset-item>
+      	</a-assets>
 
-      <a-entity gltf-model="#people" position="0 0 -4"></a-entity>
+      	<a-entity 
+      		gltf-model="#people" 
+      		position="4 0 -4"
+      		rotation="0 0 0"
+      		animation="property: rotation; 
+                   to: 360 0 0; 
+                   dur: 1000; 
+                   easing: linear; 
+                   loop: true" 
+            >
+      	</a-entity>
 
 
       <!-- tekst -->
-      	<!-- Anchors. -->
-     <!--  <a-entity mixin="marker" position="-2.5 1 -4"></a-entity> -->
-      <a-entity position="-2.5 1 -2"
-                text="anchor: left; width: 1.5; color: white; value: [LEFT ANCHOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
-      </a-entity>
-      <!-- <a-ntity mixin="marker" position="0 1 -4"></a-entity> -->
-      <a-entity position="0 1 -2"
-                text="anchor: center; width: 1.5; color: white; value: [CENTER ANCHOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
-      </a-entity>
-      <!-- <a-entity mixin="marker" position="2.5 1 -4"></a-entity> -->
-      <a-entity position="2.5 1 -2"
-                text="anchor: right; width: 1.5; color: white; value: [RIGHT ANCHOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+    	<a-entity position="-1 2.5 -2"
+                text="width: 2; color: white; value: Welkom bij de online virtual reality webshop">
       </a-entity>
 
-      	<!-- Spacing. -->
-     <!--  <a-entity mixin="marker" position="-1 2.5 -4"></a-entity> -->
-      <a-entity position="-1 2.5 -2"
-                text="width: 2; color: white; value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
-      </a-entity>
-
-      <!-- <a-entity mixin="marker" position="-1 2 -4"></a-entity> -->
       <a-entity position="0 2 -2"
                 text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: [LINE AND LETTER SPACING] Welkom bij de online virtual reality webshop">
       </a-entity>
